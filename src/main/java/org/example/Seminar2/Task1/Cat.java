@@ -41,6 +41,11 @@ public class Cat extends Animal {
         }
     }
 
+    public void klubok(){
+        System.out.println("Это кот с именем "+name
+                +", с возрастом - "+age+ ", c цветом шерсти: "+color + " свернулся в клубок");
+    }
+
     @Override
     public String toString() {
         return "Cat{" +
@@ -53,7 +58,7 @@ public class Cat extends Animal {
     @Override
     public void animalInfo(){
         System.out.println("Это кот с именем "+name
-                +", с возрастом-"+age+ " , c цветом шерсти: "+color);
+                +", с возрастом - "+age+ ", c цветом шерсти: "+color);
     }
 
     @Override

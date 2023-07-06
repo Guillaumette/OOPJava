@@ -22,7 +22,13 @@ public class Main {
         };
 
         for (Animal o : catsAndDogs) {
-            o.voice();
+            if (o instanceof Cat) {
+                ((Cat) o).voice();
+            } else {
+                System.out.println("Это не кот");
+            }
         }
+        Animal cat = new Cat("Барсик", "белый", 21);
+        ((Cat) cat).klubok();
     }
 }
